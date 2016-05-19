@@ -1,0 +1,139 @@
+body {
+  /* Set the general typography declarations for the page */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  color: #222222;
+
+  /* I want the page to fill the window */
+  margin: 0 0;
+}
+
+/* Make all of the links the same color and style */
+a {
+  color: #E02A0B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Add a slight change of color to announce the hyperlink */
+a:hover {
+  color: #941904;
+}
+
+/* To center the text in the header and footer */
+.masthead-intro,
+.masthead-heading,
+.content-footer {
+  text-align: center;
+}
+
+.masthead {
+  /* Use padding to establish the height of the masthead image to reveal */
+  padding: 6em 0;
+  /* Used a link to an image on Unsplash */
+  background-image: url('https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=db130336e8134fc3f734dbc4318f5c5e');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Add a nice band of color at the top of the page */
+  border-top: 1em solid #470d04;
+}
+
+.masthead-intro {
+  /* */
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+  color: #000000;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #470d04;
+  text-shadow: #ccc 2px 3px;
+}
+
+.section-introduction > p,
+.section-location > p,
+.section-more > p {
+  /* typography declarations */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+
+/* Add to elements to maintain padding when reducing the size of the window */
+.base-padding {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.section-more > p {
+  margin-left: 1em;
+}
+
+.section-more > h2 {
+  /* typography declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #470d04;
+  margin-left: 1em;
+}
+
+.section-introduction,
+.section-location,
+.section-more {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+ul.social {
+  padding: 0;
+}
+
+.social > li {
+  display: inline-block;
+}
+
+.social > li a {
+  margin: 0 1em;
+  font-size: 1em;
+}
+
+.content-footer {
+  /* I like dark red */
+  background-color: #470d04;
+  margin-top: 5em;
+  padding: 3em 0;
+}
+
+.content-footer p {
+  color: gray;
+}
+
+/* This will allow the site to respond more accurately on smaller displays */
+@media screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+
+  .masthead-heading {
+    font-size: 3em;
+  }
+
+  .social > li {
+    display: block;
+    margin-top: .5em;
+  }
+
+  .social > li a {
+    margin-top: 1em;
+  }
+}
