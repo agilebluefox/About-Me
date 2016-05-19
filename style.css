@@ -94,13 +94,17 @@ a:hover {
   margin-top: 2em;
 }
 
+ul.social {
+  padding: 0;
+}
+
 .social > li {
   display: inline-block;
 }
 
 .social > li a {
   margin: 0 1em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .content-footer {
@@ -117,9 +121,19 @@ a:hover {
 /* This will allow the site to respond more accurately on smaller displays */
 @media screen and (max-width: 500px) {
   .masthead {
-    padding:  3em 0;
+    padding: 3em 0;
   }
+
   .masthead-heading {
     font-size: 3em;
+  }
+
+  .social > li {
+    display: block;
+    margin-top: .5em;
+  }
+
+  .social > li a {
+    margin-top: 1em;
   }
 }
